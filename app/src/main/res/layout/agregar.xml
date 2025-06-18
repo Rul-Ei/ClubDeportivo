@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDE7"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:text="Regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:backgroundTint="#000000"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/boton_regresar"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:elevation="4dp" />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Agregar Nuevo Producto"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TableLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:padding="8dp">
+
+            <TableRow android:layout_marginBottom="12dp">
+                <TextView
+                    android:text="Nombre:"
+                    android:padding="10dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editNombre"
+                    android:hint="Ej: Cuaderno"
+                    android:background="#EEEEEE"
+                    android:padding="10dp" />
+            </TableRow>
+
+
+            <TableRow android:layout_marginBottom="12dp">
+                <TextView
+                    android:text="Cantidad:"
+                    android:padding="10dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editCantidad"
+                    android:hint="Ej: 100"
+                    android:inputType="number"
+                    android:background="#EEEEEE"
+                    android:padding="10dp"
+                    tools:ignore="Autofill" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="12dp">
+                <TextView
+                    android:text="Precio:"
+                    android:padding="10dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editPrecio"
+                    android:hint="Ej: 8.50"
+                    android:inputType="numberDecimal"
+                    android:background="#EEEEEE"
+                    android:padding="10dp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:text="Guardar Producto"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_agregar"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="6dp"
+            android:backgroundTint="#FFA726"/>
+
+    </LinearLayout>
+</ScrollView>

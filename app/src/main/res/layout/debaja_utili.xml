@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDE7"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Botón de Regresar -->
+        <Button
+            android:id="@+id/btnRegresar"
+            android:text="Regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:textColor="#ffffff"
+            android:elevation="4dp"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/boton_regresar" />
+
+        <TextView
+            android:text="❌ PRODUCTOS DAÑADOS"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TableLayout
+            android:id="@+id/tablaDanados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:background="#F5F5F5"
+            android:padding="2dp">
+
+            <TableRow android:background="#E53935">
+                <TextView android:text="Producto" android:textStyle="bold" android:textColor="#FFFFFF" android:padding="8dp" android:gravity="center"/>
+                <TextView android:text="Cantidad" android:textStyle="bold" android:textColor="#FFFFFF" android:padding="8dp" android:gravity="center"/>
+                <TextView android:text="Motivo" android:textStyle="bold" android:textColor="#FFFFFF" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Balon" android:padding="8dp" android:gravity="center"/>
+                <TextView android:text="3" android:padding="8dp" android:gravity="center"/>
+                <TextView android:text="Tiene huecos" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Guantes" android:padding="8dp" android:gravity="center"/>
+                <TextView android:text="2" android:padding="8dp" android:gravity="center"/>
+                <TextView android:text="Gastados" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Petos" android:padding="8dp" android:gravity="center"/>
+                <TextView android:text="3" android:padding="8dp" android:gravity="center"/>
+                <TextView android:text="viejos" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Red arco" android:padding="8dp" android:gravity="center"/>
+                <TextView android:text="2" android:padding="8dp" android:gravity="center"/>
+                <TextView android:text="Agujeros" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnRegistrarDanado"
+            android:text="Registrar Producto Dañado"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:padding="10dp" />
+    </LinearLayout>
+</ScrollView>

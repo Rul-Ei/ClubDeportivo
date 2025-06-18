@@ -13,7 +13,7 @@ public class InicioActivity extends AppCompatActivity {
         setContentView(R.layout.inicio);
 
         Button btnLogin = findViewById(R.id.btnIniciarSesion);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(InicioActivity.this, LoginActivity.class);

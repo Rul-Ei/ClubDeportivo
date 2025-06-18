@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDE7"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:text="Regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:textColor="#ffffff"
+            android:elevation="4dp"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/boton_regresar" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_de_stocks"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="20dp" />
+
+        <TableLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/tablaStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:background="#FFFFFF"
+            android:padding="4dp"
+            android:elevation="2dp">
+
+            <TableRow android:background="#FFA726">
+                <TextView android:text="@string/producto" android:textStyle="bold" android:gravity="center" android:textColor="#FFFFFF" android:padding="10dp"/>
+                <TextView android:text="@string/cantidad" android:textStyle="bold" android:gravity="center" android:textColor="#FFFFFF" android:padding="10dp"/>
+                <TextView android:text="@string/estado" android:textStyle="bold" android:gravity="center" android:textColor="#FFFFFF" android:padding="10dp"/>
+                <TextView android:text="@string/precio" android:textStyle="bold" android:gravity="center" android:textColor="#FFFFFF" android:padding="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Balón" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="6" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="Disponible" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="8.00" android:gravity="center" android:padding="10dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Balón" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="6" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="Disponible" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="8.00" android:gravity="center" android:padding="10dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Balón" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="6" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="Disponible" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="8.00" android:gravity="center" android:padding="10dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Balón" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="6" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="Disponible" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="8.00" android:gravity="center" android:padding="10dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Balón" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="6" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="Disponible" android:gravity="center" android:padding="10dp"/>
+                <TextView android:text="8.00" android:gravity="center" android:padding="10dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnAgregarProducto"
+            android:text="Agregar Producto"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/boton_agregar"
+            android:padding="12dp"
+            android:backgroundTint="#FFA726"
+            android:elevation="6dp"/>
+    </LinearLayout>
+</ScrollView>

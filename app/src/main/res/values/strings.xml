@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ClubDeportivo</string>
+    <string name="centro_de_logistica">CENTRO DE LOGISTICA</string>
+    <string name="control_de_stock">CONTROL DE STOCK</string>
+    <string name="registrar_utilidades">REGISTRAR UTILIDADES</string>
+    <string name="baja_de_utilidades">BAJA DE UTILIDADES</string>
+    <string name="menu">Menu</string>
+    <string name="salir">Salir</string>
+    <string name="producto">Producto</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="estado">Estado</string>
+    <string name="precio">Precio</string>
+    <string name="control_de_stocks">Control de Stock</string>
+    <string name="go">Go...!</string>
 </resources>

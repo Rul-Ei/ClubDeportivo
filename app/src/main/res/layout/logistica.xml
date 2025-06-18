@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#004D40"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_menu"
+            android:contentDescription="@string/menu" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/exit_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_exit"
+            android:contentDescription="@string/salir" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_below="@id/topBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/centro_de_logistica"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/btnStock"
+        android:layout_below="@id/title"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/control_de_stock"
+        android:background="@drawable/bordesbtn"
+        android:textStyle="bold"
+         />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_below="@id/btnStock"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/registrar_utilidades"
+        android:background="@drawable/bordesbtn"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnBaja"
+        android:layout_below="@id/btnAgregar"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/baja_de_utilidades"
+        android:background="@drawable/bordesbtn"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
